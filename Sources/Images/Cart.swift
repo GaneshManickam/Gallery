@@ -2,15 +2,15 @@ import UIKit
 import Photos
 
 public protocol CartDelegate: class {
-  func cart(_ cart: Cart, didAdd image: Image, newlyTaken: Bool)
-  func cart(_ cart: Cart, didRemove image: Image)
+  func cart(_ cart: Cart, didAdd image: ImageItem, newlyTaken: Bool)
+  func cart(_ cart: Cart, didRemove image: ImageItem)
   func cartDidReload(_ cart: Cart)
 }
 
 /// Cart holds selected images and videos information
 public class Cart {
 
-  public var images: [Image] = []
+  public var images: [ImageItem] = []
   public var video: Video?
   var delegates: NSHashTable<AnyObject> = NSHashTable.weakObjects()
 
@@ -28,7 +28,7 @@ public class Cart {
 
   // MARK: - Logic
 
-  public func add(_ image: Image, newlyTaken: Bool = false) {
+  public func add(_ image: ImageItem, newlyTaken: Bool = false) {
     guard !images.contains(image) else { return }
 
     images.append(image)
@@ -38,7 +38,7 @@ public class Cart {
     }
   }
 
-  public func remove(_ image: Image) {
+  public func remove(_ image: ImageItem) {
     guard let index = images.firstIndex(of: image) else { return }
 
     images.remove(at: index)
@@ -48,7 +48,7 @@ public class Cart {
     }
   }
 
-  public func reload(_ images: [Image]) {
+  public func reload(_ images: [ImageItem]) {
     self.images = images
 
     for case let delegate as CartDelegate in delegates.allObjects {

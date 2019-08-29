@@ -11,7 +11,7 @@
 		D27B72ED1D6EEEC80093318F /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27B72EC1D6EEEC80093318F /* Tests.swift */; };
 		D2D1A6CA1F84F4DB0083D4C5 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1A6901F84F4DB0083D4C5 /* Album.swift */; };
 		D2D1A6CB1F84F4DB0083D4C5 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1A6911F84F4DB0083D4C5 /* Cart.swift */; };
-		D2D1A6CC1F84F4DB0083D4C5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1A6921F84F4DB0083D4C5 /* Image.swift */; };
+		D2D1A6CC1F84F4DB0083D4C5 /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1A6921F84F4DB0083D4C5 /* ImageItem.swift */; };
 		D2D1A6CD1F84F4DB0083D4C5 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1A6931F84F4DB0083D4C5 /* ImageCell.swift */; };
 		D2D1A6CE1F84F4DB0083D4C5 /* ImagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1A6941F84F4DB0083D4C5 /* ImagesController.swift */; };
 		D2D1A6CF1F84F4DB0083D4C5 /* ImagesLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1A6951F84F4DB0083D4C5 /* ImagesLibrary.swift */; };
@@ -76,7 +76,7 @@
 		D27B730C1D6EF04D0093318F /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
 		D2D1A6901F84F4DB0083D4C5 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		D2D1A6911F84F4DB0083D4C5 /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
-		D2D1A6921F84F4DB0083D4C5 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		D2D1A6921F84F4DB0083D4C5 /* ImageItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
 		D2D1A6931F84F4DB0083D4C5 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		D2D1A6941F84F4DB0083D4C5 /* ImagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesController.swift; sourceTree = "<group>"; };
 		D2D1A6951F84F4DB0083D4C5 /* ImagesLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesLibrary.swift; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 			children = (
 				D2D1A6901F84F4DB0083D4C5 /* Album.swift */,
 				D2D1A6911F84F4DB0083D4C5 /* Cart.swift */,
-				D2D1A6921F84F4DB0083D4C5 /* Image.swift */,
+				D2D1A6921F84F4DB0083D4C5 /* ImageItem.swift */,
 				D2D1A6931F84F4DB0083D4C5 /* ImageCell.swift */,
 				D2D1A6941F84F4DB0083D4C5 /* ImagesController.swift */,
 				D2D1A6951F84F4DB0083D4C5 /* ImagesLibrary.swift */,
@@ -476,7 +476,7 @@
 				D2D1A6F71F84F4DB0083D4C5 /* VideoCell.swift in Sources */,
 				D2D1A6E81F84F4DB0083D4C5 /* VideoEditor.swift in Sources */,
 				D2D1A6DA1F84F4DB0083D4C5 /* UIViewController+Extensions.swift in Sources */,
-				D2D1A6CC1F84F4DB0083D4C5 /* Image.swift in Sources */,
+				D2D1A6CC1F84F4DB0083D4C5 /* ImageItem.swift in Sources */,
 				D2D1A6D91F84F4DB0083D4C5 /* UIView+Extensions.swift in Sources */,
 				D2D1A6E51F84F4DB0083D4C5 /* AdvancedVideoEditor.swift in Sources */,
 				D2D1A6F31F84F4DB0083D4C5 /* TripleButton.swift in Sources */,

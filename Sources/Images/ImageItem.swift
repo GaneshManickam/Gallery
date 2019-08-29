@@ -2,7 +2,7 @@ import UIKit
 import Photos
 
 /// Wrap a PHAsset
-public class Image: Equatable {
+public class ImageItem: Equatable {
 
   public let asset: PHAsset
 
@@ -15,7 +15,7 @@ public class Image: Equatable {
 
 // MARK: - UIImage
 
-extension Image {
+extension ImageItem {
 
   /// Resolve UIImage synchronously
   ///
@@ -46,7 +46,7 @@ extension Image {
   ///   - images: The array of Image
   ///   - size: The target size for all images
   ///   - completion: Called when operations completion
-  public static func resolve(images: [Image], completion: @escaping ([UIImage?]) -> Void) {
+  public static func resolve(images: [ImageItem], completion: @escaping ([UIImage?]) -> Void) {
     let dispatchGroup = DispatchGroup()
     var convertedImages = [Int: UIImage]()
 
@@ -73,6 +73,6 @@ extension Image {
 
 // MARK: - Equatable
 
-public func == (lhs: Image, rhs: Image) -> Bool {
+public func == (lhs: ImageItem, rhs: ImageItem) -> Bool {
   return lhs.asset == rhs.asset
 }

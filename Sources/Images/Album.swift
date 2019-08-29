@@ -4,7 +4,7 @@ import Photos
 class Album {
 
   let collection: PHAssetCollection
-  var items: [Image] = []
+  var items: [ImageItem] = []
 
   // MARK: - Initialization
 
@@ -18,7 +18,7 @@ class Album {
     let itemsFetchResult = PHAsset.fetchAssets(in: collection, options: Utils.fetchOptions())
     itemsFetchResult.enumerateObjects({ (asset, count, stop) in
       if asset.mediaType == .image {
-        self.items.append(Image(asset: asset))
+        self.items.append(ImageItem(asset: asset))
       }
     })
   }
